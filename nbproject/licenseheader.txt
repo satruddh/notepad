@@ -1,0 +1,13 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Copyright (C) ${date?date?string("yyyy")} ${project.organization!user}
+${licensePrefix?replace(" +$", "", "r")}
+${licensePrefix}This project is solely a result of educational/training project.
+${licensePrefix}and the main aim is to demonstrate swing components.
+${licensePrefix?replace(" +$", "", "r")}
+${licensePrefix}Any form of reproduction without appropriate credit to the owner/developer
+${licensePrefix}might be a copyright infringement.
+<#if licenseLast??>
+${licenseLast}
+</#if>
